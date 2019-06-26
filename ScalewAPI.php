@@ -86,8 +86,6 @@ class ScalewAPI{
 
 		$this->last_response = ['date' => date(DateTime::ISO8601), 'result' => $result];
 		return $result;
-		
-		return json_encode($param);
 	}
 	public function array_to_get(array $param){
 		if(empty($param)) return false;
